@@ -22,7 +22,7 @@
       "@utils/*": ["utils/*"],
       "@hooks/*": ["hooks/*"],
       "@libs/*": ["libs/*"],
-      "@styles/*": ["styles/*"],
+      "@styles/*": ["components/styles/*"],
       "@assets/*": ["assets/*"]
     }
   },
