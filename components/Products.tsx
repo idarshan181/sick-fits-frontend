@@ -21,7 +21,7 @@ interface ProductsData {
   allProducts: ProductsInterface[];
 }
 
-const ALL_PRODUCTS_QUERY = gql`
+export const ALL_PRODUCTS_QUERY = gql`
   query ALL_PRODUCTS_QUERY {
     allProducts {
       id
@@ -52,7 +52,7 @@ export default function Products() {
   return (
     <div>
       <ProductsList>
-        {data.allProducts.map((product: ProductsInterface) => (
+        {data?.allProducts.map(product => (
           <Product key={product.id} product={product} />
         ))}
       </ProductsList>
